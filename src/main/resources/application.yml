@@ -1,0 +1,34 @@
+
+spring:
+  datasource:
+    url: jdbc:mariadb://198.13.47.188:19762/ssgdf
+    username: mrbluesky
+    password: kang12!@
+  thymeleaf:
+    prefix: classpath:templates/
+    suffix: .html
+    cache: false
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username:
+    password:
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+  jpa:
+    database: mysql
+    #    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: validate # ��ÿ��� validate ��õ
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+        implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
+    show-sql: false
+    open-in-view: false
+
+
