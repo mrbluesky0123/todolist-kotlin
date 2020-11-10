@@ -5,7 +5,7 @@ import java.time.LocalDate
 import javax.persistence.*
 
 @Entity
-@Table(name="todo")
+@Table(name="TODO")
 data class Todo(
         @Id
         @GeneratedValue(strategy=GenerationType.IDENTITY)
