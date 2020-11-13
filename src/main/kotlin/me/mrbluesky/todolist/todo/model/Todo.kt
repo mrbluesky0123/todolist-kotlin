@@ -11,6 +11,7 @@ data class Todo(
         @GeneratedValue(strategy=GenerationType.IDENTITY)
         @Column(name="id")
         var id: Int,
+
         @Column(name="pgm_sts")
         var pgmSts: String,
 
