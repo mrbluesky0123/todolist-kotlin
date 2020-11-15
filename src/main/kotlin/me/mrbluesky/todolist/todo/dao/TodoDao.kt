@@ -7,6 +7,6 @@ import org.springframework.stereotype.Repository
 @Repository
 interface TodoDao: JpaRepository<Todo, Long> {
     fun findAllByOrderById(): List<Todo>?
-    fun findById(id: Int): Todo?
+    fun findById(id: Int): Todo
 
 }
